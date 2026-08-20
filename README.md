@@ -39,52 +39,6 @@ Sequential_circuit_latches_verilog_HDL/
 └── README.md
 ```
 
-## 🔹 Latches Implemented
-
-### 1. SR Latch
-
-The SR (Set-Reset) latch is a basic sequential circuit capable of storing one bit of information.
-
-**Inputs:**
-- S — Set
-- R — Reset
-
-**Output:**
-- Q
-
-### 2. D Latch
-
-The D (Data) latch is designed to eliminate the invalid state associated with the SR latch. The output follows the input when the latch is enabled.
-
-**Inputs:**
-- D — Data
-- Enable
-
-**Output:**
-- Q
-
-### 3. JK Latch
-
-The JK latch is an improved version of the SR latch that eliminates the invalid input condition.
-
-**Inputs:**
-- J
-- K
-- Enable
-
-**Output:**
-- Q
-
-### 4. T Latch
-
-The T (Toggle) latch changes its output state when the toggle input is active.
-
-**Inputs:**
-- T — Toggle
-- Enable
-
-**Output:**
-- Q
 
 ## 🛠️ Tools & Technologies
 
