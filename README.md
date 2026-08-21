@@ -1,13 +1,24 @@
-# Sequential Circuit Latches using Verilog HDL
+# Sequential Circuits & Shift Registers using Verilog HDL
 
-This project contains the Verilog HDL implementation and simulation of basic sequential circuit latches. The project covers four commonly used latches:
+A collection of sequential circuit designs implemented in **Verilog HDL** and verified through simulation using **Xilinx Vivado**.
 
-- SR Latch
-- D Latch
-- JK Latch
-- T Latch
+## 📌 Project Overview
 
-The designs are written in Verilog HDL and verified using testbenches and waveform simulation.
+This project contains RTL implementations and dedicated testbenches for:
+
+* SR Latch
+* D Latch
+* JK Latch
+* T Latch
+* SISO Shift Register
+* SIPO Shift Register
+* PISO Shift Register
+* PIPO Shift Register
+* Universal Shift Register (USR)
+
+Each module is accompanied by a testbench for functional verification and waveform analysis.
+
+---
 
 ## 📁 Project Structure
 
@@ -16,67 +27,122 @@ Sequential_circuit_latches_verilog_HDL/
 │
 ├── SR_Latch/
 │   ├── sr_latch.v
-│   └── sr_latch_tb.v
+│   └── tb_sr_latch.v
 │
 ├── D_Latch/
-│   ├── d_latch.v
-│   └── d_latch_tb.v
+│   ├── D_latch.v
+│   └── tb_D_latch.v
 │
 ├── JK_Latch/
-│   ├── jk_latch.v
-│   └── jk_latch_tb.v
+│   ├── JK_latch.v
+│   └── tb_JK_latch.v
 │
 ├── T_Latch/
-│   ├── t_latch.v
-│   └── t_latch_tb.v
+│   ├── T_latch.v
+│   └── tb_T_latch.v
 │
-├── images/
-│   ├── sr_latch.png
-│   ├── d_latch.png
-│   ├── jk_latch.png
-│   └── t_latch.png
+├── SISO/
+│   ├── SISO.v
+│   └── tb_SISO.v
+│
+├── SIPO/
+│   ├── SIPO.v
+│   └── tb_SIPO.v
+│
+├── PISO/
+│   ├── PISO.v
+│   └── tb_PISO.v
+│
+├── PIPO/
+│   ├── PIPO.v
+│   └── tb_PIPO.v
+│
+├── USR/
+│   ├── USR.v
+│   └── tb_USR.v
 │
 └── README.md
 ```
 
+---
 
-## 🛠️ Tools & Technologies
+## 🔹 Implemented Modules
 
-- Verilog HDL
-- Digital Logic Design
-- Xilinx Vivado
-- Verilog Testbenches
-- Waveform Simulation
+### Latches
+
+| Module       | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| **SR Latch** | Basic set-reset latch implemented using Verilog HDL.         |
+| **D Latch**  | Data latch with enable-based operation.                      |
+| **JK Latch** | JK latch supporting set, reset, hold, and toggle operations. |
+| **T Latch**  | Toggle latch implemented using Verilog RTL.                  |
+
+### Shift Registers
+
+| Module   | Description                                                   |
+| -------- | ------------------------------------------------------------- |
+| **SISO** | Serial data input and serial data output implementation.      |
+| **SIPO** | Serial data input with parallel data output.                  |
+| **PISO** | Parallel data loading followed by serial data output.         |
+| **PIPO** | Parallel data loading and parallel data output.               |
+| **USR**  | Universal Shift Register supporting multiple operating modes. |
+
+---
 
 ## 🧪 Verification
 
-Each latch is implemented using Verilog HDL and tested using a corresponding testbench.
+Every RTL module includes a dedicated **testbench** for functional verification.
 
-The designs are verified through simulation by applying different input combinations and analyzing the resulting output waveforms.
+Verification includes:
 
-## 🎯 Learning Objectives
+* Input stimulus generation
+* Clock generation
+* Reset and control signal testing
+* Output verification
+* Simulation waveform analysis
 
-This project helped in understanding:
+All modules are simulated using **Xilinx Vivado**.
 
-- Basics of Verilog HDL
-- Sequential circuit design
-- Latch operation and behavior
-- Verilog testbench development
-- Functional simulation
-- Waveform analysis
-- Implementation of digital logic using HDL
+---
+
+## 🛠️ Tools & Technologies
+
+* **Verilog HDL**
+* **Xilinx Vivado**
+* **RTL Design**
+* **Digital Logic Design**
+* **Functional Simulation**
+* **Waveform Analysis**
+
+---
+
+## 📚 Concepts Practiced
+
+* Verilog RTL coding
+* Sequential circuit design
+* Clocked logic
+* Reset and enable signals
+* Shift operations
+* Serial and parallel data handling
+* Testbench development
+* Functional verification
+* Simulation debugging
+
+---
 
 ## 🚀 Future Work
 
-The project can be extended by implementing:
+* Flip-Flops: SR, D, JK, T
+* Counters
+* Ring & Johnson Counters
+* Finite State Machines (FSMs)
+* Clock Dividers
+* UART
+* FIFO
+* Memory RTL
+* Advanced RTL Design & Verification
 
-- SR, D, JK, and T Flip-Flops
-- Counters
-- Shift Registers
-- Registers
-- Finite State Machines (FSMs)
-- UART
-- FIFO
+---
 
 ## 👩‍💻 Author
 
@@ -84,7 +150,6 @@ The project can be extended by implementing:
 
 B.Tech — Electronics Engineering
 
-
 ---
 
-⭐ This project is part of my learning journey in Digital Logic Design and Verilog HDL.
+⭐ This repository documents my hands-on practice with **Verilog HDL, RTL Design, Sequential Circuits, and Functional Verification**.
