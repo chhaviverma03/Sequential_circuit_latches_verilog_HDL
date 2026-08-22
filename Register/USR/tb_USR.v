@@ -78,16 +78,26 @@ module tb_USR(
     s_in=1'b1;
     #10;
     shift=1'b0;
-    
+
+    #10;
+    rst=1'b1;
+    #10;
+    rst=1'b0;
+    mode=2'b10;//piso
+    load=1'b1;
+    p_in<=4'b1001;
+    #10;
+    load=1'b0;//for geting s_out
+        
     #10
     rst=1'b1;
     #10;
     rst=0;
-    mode=2'b11;//piso
+    mode=2'b11;//pipo
     load=1'b1;
     p_in<=4'b1111;
     #10;
-    load=1'b0; //for getting s_out
+    load=1'b0; //for getting p_out
     
 
     
