@@ -6,10 +6,19 @@ A collection of sequential circuit designs implemented in **Verilog HDL** and ve
 
 This project contains RTL implementations and dedicated testbenches for:
 
+### Latches
 * SR Latch
 * D Latch
 * JK Latch
 * T Latch
+
+### Flip-Flops
+* SR Flip-Flop
+* D Flip-Flop
+* JK Flip-Flop
+* T Flip-Flop
+
+### Registers
 * SISO Shift Register
 * SIPO Shift Register
 * PISO Shift Register
@@ -17,7 +26,6 @@ This project contains RTL implementations and dedicated testbenches for:
 * Universal Shift Register (USR)
 
 Each module is accompanied by a testbench for functional verification and waveform analysis.
-
 ---
 
 
