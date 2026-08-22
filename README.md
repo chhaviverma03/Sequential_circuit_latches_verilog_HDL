@@ -20,51 +20,70 @@ Each module is accompanied by a testbench for functional verification and wavefo
 
 ---
 
+
 ## 📁 Project Structure
 
 ```text
 Sequential_circuit_latches_verilog_HDL/
 │
-├── SR_Latch/
-│   ├── sr_latch.v
-│   └── tb_sr_latch.v
+├── Latch/
+│   ├── D_Latch/
+│   │   ├── D_latch.v
+│   │   └── tb_D_latch.v
+│   │
+│   ├── JK_LATCH/
+│   │   ├── JK_latch.v
+│   │   └── tb_JK_latch.v
+│   │
+│   ├── SR_Latch/
+│   │   ├── sr_latch.v
+│   │   └── tb_sr_latch.v
+│   │
+│   └── T_Latch/
+│       ├── T_latch.v
+│       └── tb_T_latch.v
 │
-├── D_Latch/
-│   ├── D_latch.v
-│   └── tb_D_latch.v
+├── flipflop/
+│   ├── D_ff/
+│   │   ├── D_ff.v
+│   │   └── tb_D_ff.v
+│   │
+│   ├── jk_ff/
+│   │   ├── jk_ff.v
+│   │   └── tb_jk_ff.v
+│   │
+│   ├── sr_ff/
+│   │   ├── sr_ff.v
+│   │   └── tb_sr_ff.v
+│   │
+│   └── t_ff/
+│       ├── t_ff.v
+│       └── tb_t_ff.v
 │
-├── JK_Latch/
-│   ├── JK_latch.v
-│   └── tb_JK_latch.v
+├── Register/
+│   ├── SISO/
+│   │   ├── siso.v
+│   │   └── tb_siso.v
+│   │
+│   ├── SIPO/
+│   │   ├── SIPO.v
+│   │   └── tb_SIPO.v
+│   │
+│   ├── PISO/
+│   │   ├── PISO.v
+│   │   └── tb_PISO.v
+│   │
+│   ├── PIPO/
+│   │   ├── PIPO.v
+│   │   └── tb_PIPO.v
+│   │
+│   └── USR/
+│       ├── USR.v
+│       └── tb_USR.v
 │
-├── T_Latch/
-│   ├── T_latch.v
-│   └── tb_T_latch.v
-│
-├── SISO/
-│   ├── SISO.v
-│   └── tb_SISO.v
-│
-├── SIPO/
-│   ├── SIPO.v
-│   └── tb_SIPO.v
-│
-├── PISO/
-│   ├── PISO.v
-│   └── tb_PISO.v
-│
-├── PIPO/
-│   ├── PIPO.v
-│   └── tb_PIPO.v
-│
-├── USR/
-│   ├── USR.v
-│   └── tb_USR.v
-│
+├── .gitignore
 └── README.md
 ```
-
----
 
 ## 🔹 Implemented Modules
 
@@ -76,6 +95,15 @@ Sequential_circuit_latches_verilog_HDL/
 | **D Latch**  | Data latch with enable-based operation.                      |
 | **JK Latch** | JK latch supporting set, reset, hold, and toggle operations. |
 | **T Latch**  | Toggle latch implemented using Verilog RTL.                  |
+
+### Flip-Flops
+
+| Module           | Description                                                       |
+| ---------------- | ----------------------------------------------------------------- |
+| **SR Flip-Flop** | Clock-controlled set-reset flip-flop with reset functionality.   |
+| **D Flip-Flop**  | Data flip-flop implementing `Q(n+1) = D`.                        |
+| **JK Flip-Flop** | JK flip-flop supporting hold, set, reset, and toggle operations. |
+| **T Flip-Flop**  | Toggle flip-flop that changes state on the active clock edge.    |
 
 ### Shift Registers
 
