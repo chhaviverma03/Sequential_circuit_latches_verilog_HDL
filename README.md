@@ -169,7 +169,6 @@ All modules are simulated using **Xilinx Vivado**.
 
 ## 🚀 Future Work
 
-* Flip-Flops: SR, D, JK, T
 * Counters
 * Ring & Johnson Counters
 * Finite State Machines (FSMs)
