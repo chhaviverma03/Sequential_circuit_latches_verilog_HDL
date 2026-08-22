@@ -26,6 +26,7 @@ This project contains RTL implementations and dedicated testbenches for:
 * Universal Shift Register (USR)
 
 Each module is accompanied by a testbench for functional verification and waveform analysis.
+
 ---
 
 
